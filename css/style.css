@@ -3337,6 +3337,7 @@ h1 {
 @media (max-width: 1439px) {
   .pricing__block {
     right: 13%;
+    max-width: 30%;
   }
 }
 @media (max-width: 1023px) {
