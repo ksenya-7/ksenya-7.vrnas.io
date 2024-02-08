@@ -2463,9 +2463,9 @@ h1 {
   z-index: 3;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 37, 50, 0)), color-stop(53.06%, rgba(37, 37, 50, 0.91)), to(#252532));
   background: linear-gradient(180deg, rgba(37, 37, 50, 0) 0%, rgba(37, 37, 50, 0.91) 53.06%, #252532 100%);
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  visibility: hidden;
+  -webkit-transition: opacity 0.6s ease, visibility 0.6s ease;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 .service__item::after {
   content: "";
@@ -2481,8 +2481,9 @@ h1 {
   background-origin: border-box;
   background-clip: padding-box, border-box;
   opacity: 0;
-  -webkit-transition: opacity 0.6s ease;
-  transition: opacity 0.6s ease;
+  visibility: hidden;
+  -webkit-transition: opacity 0.6s ease, visibility 0.6s ease;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 .service__item .service__border {
   position: absolute;
@@ -2528,6 +2529,7 @@ h1 {
 @media (hover: hover) {
   .service__item:hover:not(.focus-visible)::before, .service__item:hover:not(.focus-visible)::after {
     opacity: 1;
+    visibility: visible;
   }
 }
 .service__item img {
@@ -4058,7 +4060,7 @@ h1 {
 }
 @media (max-width: 1023px) {
   .team {
-    margin: 52px 0 0;
+    margin: 49px 0 0;
     padding: 0 0 2px;
   }
 }
