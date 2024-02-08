@@ -2090,6 +2090,39 @@ h1 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
+    margin: 0 -24px;
+  }
+  .about__img::before {
+    content: "";
+    display: block;
+    padding-bottom: 127.9465370595%;
+  }
+  .about__img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 767px) {
+  .about__img {
+    margin: 0 -16px;
+  }
+}
+@media (max-width: 1023px) {
+  .about__img--desktop {
+    display: none;
+  }
+}
+.about__img--mobile {
+  display: none;
+}
+@media (max-width: 1023px) {
+  .about__img--mobile {
+    display: block;
   }
 }
 .about__img .large-small-picture {
@@ -2197,6 +2230,16 @@ h1 {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+}
+@media (max-width: 1023px) {
+  .about--about-us .about__img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .about--about-us .about__img::before {
+    padding-bottom: 98%;
+  }
 }
 .about--about-us .about__img .large-small-picture {
   height: 200%;
@@ -2694,13 +2737,47 @@ h1 {
 }
 @media (max-width: 1023px) {
   .choose__img {
-    left: -131px;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    margin: 0 -24px;
+  }
+  .choose__img::before {
+    content: "";
+    display: block;
+    padding-bottom: 137.6171352075%;
+  }
+  .choose__img img {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 1023px) and (max-width: 439px) {
+  .choose__img img {
+    top: -40px;
+  }
+}
+@media (max-width: 767px) {
+  .choose__img {
+    margin: 0 -16px;
+  }
+}
+@media (max-width: 1023px) {
+  .choose__img--desktop {
+    display: none;
+  }
+}
+.choose__img--mobile {
+  display: none;
+}
+@media (max-width: 1023px) {
+  .choose__img--mobile {
+    display: block;
   }
 }
 .choose__img .large-small-picture {
